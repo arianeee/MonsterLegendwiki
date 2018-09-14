@@ -17,7 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".CategorieMonstres" />
-        <activity android:name=".ListChooseMonsters" />
+        <activity android:name=".ListChooseMonsters" android:label="Monsters"/>
         <activity android:name=".FicheMonstre"></activity>
     </application>
 
