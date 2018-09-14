@@ -23,6 +23,8 @@
         <activity android:name=".fichemonstre1" />
         <activity android:name=".fichemonstre3" />
         <activity android:name=".FicheMonstrePrincipale"></activity>
+        <activity android:name=".ListChooseMonsters" android:label="Monsters"/>
+        <activity android:name=".FicheMonstre"></activity>
     </application>
 
 </manifest>

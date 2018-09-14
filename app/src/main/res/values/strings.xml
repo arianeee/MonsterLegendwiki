@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Monster Legend wiki</string>
+    <string name="monsterlegendswiki">MonsterLegendswiki</string>
+    <string name="fire_lion">Fire Lion</string>
+    <string name="_100_gold">100 Gold</string>
+    <string name="todo">TODO</string>
 </resources>
