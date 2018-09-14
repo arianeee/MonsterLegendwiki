@@ -18,7 +18,11 @@
         </activity>
         <activity android:name=".CategorieMonstres" />
         <activity android:name=".ListChooseMonsters" />
-        <activity android:name=".FicheMonstre"></activity>
+        <activity android:name=".FicheMonstre" />
+        <activity android:name=".fichemonstre0" />
+        <activity android:name=".fichemonstre1" />
+        <activity android:name=".fichemonstre3" />
+        <activity android:name=".FicheMonstrePrincipale"></activity>
     </application>
 
 </manifest>

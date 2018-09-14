@@ -6,4 +6,127 @@
     android:layout_height="match_parent"
     tools:context=".fichemonstre1">
 
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/wikibackground"
+        tools:context=".FicheMonstre">
+
+        <TextView
+            android:id="@+id/TVdes"
+            android:layout_width="350dp"
+            android:layout_height="121dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:background="@android:color/black"
+            tools:layout_editor_absoluteY="224dp" />
+
+        <EditText
+            android:id="@+id/ETSpeed"
+            android:layout_width="145dp"
+            android:layout_height="42dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="textPersonName"
+            android:text="Speed"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ETPower"
+            app:layout_constraintTop_toBottomOf="@+id/TVdes"
+            tools:clickable="true" />
+
+        <EditText
+            android:id="@+id/ETStamina"
+            android:layout_width="145dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="58dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="textPersonName"
+            android:text="Stamina"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ETlife"
+            app:layout_constraintTop_toBottomOf="@+id/ETSpeed"
+            tools:clickable="true" />
+
+        <EditText
+            android:id="@+id/ETlife"
+            android:layout_width="145dp"
+            android:layout_height="46dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
+            android:editable="false"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="textPersonName"
+            android:text="Life"
+            app:layout_constraintBottom_toTopOf="@+id/imghabitat"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:clickable="true" />
+
+        <EditText
+            android:id="@+id/ETPower"
+            android:layout_width="145dp"
+            android:layout_height="39dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="textPersonName"
+            android:text="Power"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TVdes"
+            tools:clickable="true" />
+
+        <ImageView
+            android:id="@+id/imghabitat"
+            android:layout_width="50dp"
+            android:layout_height="52dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:background="#000000"
+            android:backgroundTintMode="screen"
+            android:padding="5dp"
+            android:src="@drawable/habitat"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/habitat"
+            tools:layout_editor_absoluteY="457dp" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="247dp"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/light0"
+            tools:layout_editor_absoluteX="69dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_media_ff"
+            tools:layout_editor_absoluteX="324dp"
+            tools:layout_editor_absoluteY="88dp" />
+
+    </android.support.constraint.ConstraintLayout>
 </android.support.constraint.ConstraintLayout>

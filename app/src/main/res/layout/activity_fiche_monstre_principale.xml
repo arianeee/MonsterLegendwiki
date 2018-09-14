@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FicheMonstrePrincipale">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/wikibackground">
+
+        <ImageView
+            android:id="@+id/IVa"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="250dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@android:drawable/alert_dark_frame" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="72dp"
+            android:layout_height="38dp"
+            android:layout_marginEnd="55dp"
+            android:layout_marginRight="55dp"
+            android:layout_marginTop="46dp"
+            android:text="NIV3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/IVa" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="46dp"
+            android:text="Niv2"
+            app:layout_constraintEnd_toStartOf="@+id/button3"
+            app:layout_constraintStart_toEndOf="@+id/button1"
+            app:layout_constraintTop_toBottomOf="@+id/IVa" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="46dp"
+            android:text="Niv1"
+            app:layout_constraintEnd_toStartOf="@+id/button2"
+            app:layout_constraintStart_toEndOf="@+id/button0"
+            app:layout_constraintTop_toBottomOf="@+id/IVa" />
+
+        <Button
+            android:id="@+id/button0"
+            android:layout_width="72dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="44dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="46dp"
+            android:text="Niv0"
+            app:layout_constraintEnd_toStartOf="@+id/button1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/IVa" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="101dp"
+            android:layout_height="49dp"
+            android:layout_marginBottom="61dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Speed"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/ETSpeed"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="101dp"
+            android:layout_height="51dp"
+            android:layout_marginBottom="59dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Life"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/ETLife" />
+
+        <EditText
+            android:id="@+id/editText6"
+            android:layout_width="101dp"
+            android:layout_height="49dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Stamina"
+            app:layout_constraintBottom_toTopOf="@+id/editText3"
+            app:layout_constraintEnd_toStartOf="@+id/ETStamina" />
+
+        <EditText
+            android:id="@+id/editText5"
+            android:layout_width="101dp"
+            android:layout_height="49dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Power"
+            app:layout_constraintBottom_toTopOf="@+id/editText2"
+            app:layout_constraintEnd_toStartOf="@+id/ETPower"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/ETStamina"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/ETLife"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/ETLife"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="60dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/ETSpeed"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="61dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/editText2" />
+
+        <EditText
+            android:id="@+id/ETPower"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/ETSpeed"
+            app:layout_constraintStart_toEndOf="@+id/editText5" />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>
