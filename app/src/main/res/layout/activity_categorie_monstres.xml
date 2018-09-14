@@ -115,9 +115,9 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="16dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="2dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginRight="8dp"
+        android:layout_marginRight="2dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:visibility="visible"
@@ -127,6 +127,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonmesfavoris">
 
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/rockillanv3" />
+
     </FrameLayout>
 
     <FrameLayout
@@ -134,15 +139,20 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="16dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginStart="2dp"
         android:layout_marginTop="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/frame6"
         app:layout_constraintStart_toEndOf="@+id/frame4"
         app:layout_constraintTop_toBottomOf="@+id/buttonmesfavoris">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/turtlenv3" />
 
     </FrameLayout>
 
@@ -152,15 +162,20 @@
         android:layout_height="0dp"
         android:layout_marginBottom="16dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginLeft="8dp"
+        android:layout_marginLeft="2dp"
         android:layout_marginRight="16dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="2dp"
         android:layout_marginTop="16dp"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/frame5"
         app:layout_constraintTop_toBottomOf="@+id/buttonmesfavoris">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/thundereaglenv3" />
 
     </FrameLayout>
 

@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 
 public class FicheMonstrePrincipale extends AppCompatActivity {
 
@@ -15,16 +16,20 @@ public class FicheMonstrePrincipale extends AppCompatActivity {
         setContentView(R.layout.activity_fiche_monstre_principale);
 
 
-        final EditText power =(EditText) findViewById(R.id.ETPower);
-        final EditText life =(EditText) findViewById(R.id.ETLife);
-        final EditText speed =(EditText) findViewById(R.id.ETSpeed);
-        final EditText stamina =(EditText) findViewById(R.id.ETStamina);
-
+        EditText power =(EditText) findViewById(R.id.ETPower);
+        EditText life =(EditText) findViewById(R.id.ETLife);
+        EditText speed =(EditText) findViewById(R.id.ETSpeed);
+        EditText stamina =(EditText) findViewById(R.id.ETStamina);
+        ImageView img = (ImageView) findViewById(R.id.IVa);
         Button NIV0 = (Button) findViewById(R.id.button0);
         NIV0.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
+                EditText power =(EditText) findViewById(R.id.ETPower);
+                EditText life =(EditText) findViewById(R.id.ETLife);
+                EditText speed =(EditText) findViewById(R.id.ETSpeed);
+                EditText stamina =(EditText) findViewById(R.id.ETStamina);
                 power.setText("");
                 life.setText("");
                 speed.setText("");
@@ -38,6 +43,11 @@ public class FicheMonstrePrincipale extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
+                EditText power =(EditText) findViewById(R.id.ETPower);
+                EditText life =(EditText) findViewById(R.id.ETLife);
+                EditText speed =(EditText) findViewById(R.id.ETSpeed);
+                EditText stamina =(EditText) findViewById(R.id.ETStamina);
+                //img.setImageResource(R.drawable.fire_lion_3);
                 power.setText("");
                 life.setText("");
                 speed.setText("");
@@ -50,6 +60,10 @@ public class FicheMonstrePrincipale extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
+                EditText power =(EditText) findViewById(R.id.ETPower);
+                EditText life =(EditText) findViewById(R.id.ETLife);
+                EditText speed =(EditText) findViewById(R.id.ETSpeed);
+                EditText stamina =(EditText) findViewById(R.id.ETStamina);
                 power.setText("");
                 life.setText("468");
                 speed.setText("");
@@ -58,10 +72,14 @@ public class FicheMonstrePrincipale extends AppCompatActivity {
             }
         });
         Button NIV3 = (Button) findViewById(R.id.button3);
-        NIV3.setOnClickListener(new View.OnClickListener() {
+        NIV3.setOnClickListener(new View.OnClickListener(){
 
             @Override
             public void onClick(View v) {
+                EditText power =(EditText) findViewById(R.id.ETPower);
+                EditText life =(EditText) findViewById(R.id.ETLife);
+                EditText speed =(EditText) findViewById(R.id.ETSpeed);
+                EditText stamina =(EditText) findViewById(R.id.ETStamina);
                 power.setText("34");
                 life.setText("12");
                 speed.setText("98");
