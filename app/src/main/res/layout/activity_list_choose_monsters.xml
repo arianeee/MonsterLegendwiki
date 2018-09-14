@@ -4,6 +4,61 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/wikibackground"
     tools:context=".ListChooseMonsters">
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="350dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/holo_purple"
+        android:text="Fire Lion"
+        app:layout_constraintBottom_toBottomOf="@+id/FireLionImage"
+        app:layout_constraintEnd_toEndOf="@+id/FireLionImage"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="@+id/FireLionImage"
+        app:layout_constraintTop_toTopOf="@+id/FireLionImage" />
+
+    <ImageView
+        android:id="@+id/FireLionImage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:adjustViewBounds="true"
+        android:background="@color/colorPrimary"
+        android:cropToPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fire_lion_2" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="320dp"
+        android:background="@android:color/holo_purple"
+        android:text="100 Gold"
+        app:layout_constraintEnd_toEndOf="@+id/FireLionImage"
+        app:layout_constraintStart_toStartOf="@+id/FireLionImage"
+        app:layout_constraintTop_toTopOf="@+id/FireLionImage" />
 
 </android.support.constraint.ConstraintLayout>
