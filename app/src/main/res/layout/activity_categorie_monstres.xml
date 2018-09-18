@@ -4,180 +4,165 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CategorieMonstres"
     android:background="@drawable/wikibackground"
-    >
+    tools:context=".CategorieMonstres">
+
+    <!-- To include a navbar created in layout xml
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/navbar" /> -->
 
     <Button
         android:id="@+id/buttonmonstres"
         android:layout_width="0dp"
         android:layout_height="40dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:background="@android:color/transparent"
+        android:background="@drawable/border"
         android:text="Monstres                                                                 >"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/include" />
 
-    <FrameLayout
-        android:id="@+id/frame1"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="2dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="2dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/buttonmesfavoris"
-        app:layout_constraintEnd_toStartOf="@+id/frame2"
-        app:layout_constraintHorizontal_chainStyle="spread"
+    <HorizontalScrollView
+        android:layout_width="368dp"
+        android:layout_height="172dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonmonstres"
-
-        >
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@android:color/transparent"
-            app:srcCompat="@drawable/lionnv3" />
-    </FrameLayout>
-
-    <FrameLayout
-        android:id="@+id/frame2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="2dp"
-        android:layout_marginLeft="2dp"
-        android:layout_marginRight="2dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="16dp"
-        android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/buttonmesfavoris"
-        app:layout_constraintEnd_toStartOf="@+id/frame3"
-        app:layout_constraintStart_toEndOf="@+id/frame1"
         app:layout_constraintTop_toBottomOf="@+id/buttonmonstres">
 
-        <ImageView
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            app:srcCompat="@drawable/genienv3" />
+            android:orientation="horizontal">
 
-    </FrameLayout>
+            <ImageButton
+                android:id="@+id/buttonLion"
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginStart="16dp"
+                android:background="#b6818181"
+                android:cropToPadding="false"
+                android:padding="1dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/lionnv3"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="96dp" />
 
-    <FrameLayout
-        android:id="@+id/frame3"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginLeft="2dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="16dp"
-        android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/buttonmesfavoris"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/frame2"
-        app:layout_constraintTop_toBottomOf="@+id/buttonmonstres"
-        app:layout_constraintVertical_bias="0.461">
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:srcCompat="@drawable/lightspiritnv3" />
-    </FrameLayout>
+            <ImageButton
+                android:id="@+id/buttonGenie"
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:background="#b6818181"
+                android:cropToPadding="false"
+                android:padding="1dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/genienv3"
+                tools:layout_editor_absoluteX="147dp"
+                tools:layout_editor_absoluteY="96dp" />
 
-    <Button
-        android:id="@+id/buttonmesfavoris"
-        android:layout_width="0dp"
-        android:layout_height="38dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="8dp"
-        android:background="@android:color/transparent"
-        android:text="Mes favoris                                                               >"
-        android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/frame4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frame2" />
+            <ImageButton
+                android:id="@+id/buttonMetalsaur"
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:background="#b6818181"
+                android:cropToPadding="false"
+                android:padding="1dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/metalsaurnv3"
+                tools:layout_editor_absoluteX="147dp"
+                tools:layout_editor_absoluteY="96dp" />
 
-    <FrameLayout
-        android:id="@+id/frame4"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="2dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="2dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/frame5"
-        app:layout_constraintHorizontal_chainStyle="spread"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonmesfavoris">
+            <ImageButton
+                android:id="@+id/buttonTurtle"
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:background="#b6818181"
+                android:cropToPadding="false"
+                android:padding="1dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/turtlenv3"
+                tools:layout_editor_absoluteX="147dp"
+                tools:layout_editor_absoluteY="96dp" />
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:srcCompat="@drawable/rockillanv3" />
+            <ImageButton
+                android:id="@+id/buttonEagle"
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:background="#b6818181"
+                android:cropToPadding="false"
+                android:padding="1dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/thundereaglenv3"
+                tools:layout_editor_absoluteX="147dp"
+                tools:layout_editor_absoluteY="96dp" />
 
-    </FrameLayout>
+            <ImageButton
+                android:id="@+id/buttonRockilla"
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:background="#b6818181"
+                android:cropToPadding="false"
+                android:padding="1dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/rockillanv3"
+                tools:layout_editor_absoluteX="147dp"
+                tools:layout_editor_absoluteY="96dp" />
 
-    <FrameLayout
-        android:id="@+id/frame5"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="2dp"
-        android:layout_marginLeft="2dp"
-        android:layout_marginRight="2dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/frame6"
-        app:layout_constraintStart_toEndOf="@+id/frame4"
-        app:layout_constraintTop_toBottomOf="@+id/buttonmesfavoris">
+            <ImageButton
+                android:id="@+id/buttonLight"
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:background="#b6818181"
+                android:cropToPadding="false"
+                android:padding="1dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/lightspiritnv3"
+                tools:layout_editor_absoluteX="147dp"
+                tools:layout_editor_absoluteY="96dp" />
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:srcCompat="@drawable/turtlenv3" />
+            <ImageButton
+                android:id="@+id/buttonPanda"
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:background="#b6818181"
+                android:cropToPadding="false"
+                android:padding="1dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/pandanv3"
+                tools:layout_editor_absoluteX="147dp"
+                tools:layout_editor_absoluteY="96dp" />
 
-    </FrameLayout>
-
-    <FrameLayout
-        android:id="@+id/frame6"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginLeft="2dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="16dp"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/frame5"
-        app:layout_constraintTop_toBottomOf="@+id/buttonmesfavoris">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:srcCompat="@drawable/thundereaglenv3" />
-
-    </FrameLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
 
 
 </android.support.constraint.ConstraintLayout>

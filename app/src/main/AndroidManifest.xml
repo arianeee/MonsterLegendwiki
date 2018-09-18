@@ -16,7 +16,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CategorieMonstres"/>
+        <activity android:name=".CategorieMonstres" android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity android:name=".FicheMonstre" />
         <activity android:name=".fichemonstre0" />
         <activity android:name=".fichemonstre1" />
