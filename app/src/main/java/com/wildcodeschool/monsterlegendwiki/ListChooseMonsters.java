@@ -14,7 +14,7 @@ public class ListChooseMonsters extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_choose_monsters);
 
-        ImageButton openFiche = findViewById(R.id.imageButton2);
+        ImageButton openFiche = findViewById(R.id.imageBut1);
         openFiche.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

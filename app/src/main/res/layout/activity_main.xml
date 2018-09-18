@@ -8,7 +8,7 @@
     android:background="@drawable/wikibackground"
     tools:context=".MainActivity">
 
-    <ImageButton
+    <ImageButton 
         android:id="@+id/imageButton"
         android:layout_width="0dp"
         android:layout_height="0dp"
