@@ -1,6 +1,7 @@
 package com.wildcodeschool.monsterlegendwiki;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.v4.view.PagerAdapter;
 import android.view.LayoutInflater;
@@ -71,6 +72,13 @@ public class SlideAdapter extends PagerAdapter {
         View view = inflater.inflate(R.layout.slide,container,false);
         LinearLayout layoutslide = view.findViewById(R.id.slideLinearLayout);
         ImageView imgslide = view.findViewById(R.id.slideing);
+        imgslide.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, FicheMonstre.class);
+                context.startActivity(intent);
+            }
+        });
         /*
         TextView txttitle = view.findViewById(R.id.txttitle);
         TextView description = view.findViewById(R.id.textDescription);
