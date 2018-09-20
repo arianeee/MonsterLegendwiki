@@ -4,6 +4,7 @@
     <color name="orange">#f99005</color>
     <color name="bleu">#000dca</color>
     <color name="vert_fluo">#57cf24</color>
+    <color name="colorAccent">#FF4081</color>
 
     <color name="accent_color">@color/cyan</color>
     <color name="colorPrimary">@color/bleu</color>

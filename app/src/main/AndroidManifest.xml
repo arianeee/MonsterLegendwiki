@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
+
         <activity
             android:name=".MainActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" ><intent-filter>
@@ -24,11 +25,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".FicheMonstre" />
-        <activity android:name=".fichemonstre0" />
-        <activity android:name=".fichemonstre1" />
-        <activity android:name=".fichemonstre3" />
+
         <activity android:name=".FicheMonstrePrincipale" />
+
+        <activity android:name=".fiche_lightspirit" />
+        <activity android:name=".fiche_panda" />
+        <activity android:name=".fiche_eagle" />
+        <activity android:name=".fiche_turtle" />
+        <activity android:name=".fiche_godzilla" />
+        <activity android:name=".fiche_metal" />
+        <activity android:name=".fiche_genie"></activity>
+
+
         <activity
             android:name=".ListChooseMonsters"
             android:label="Monsters" />
