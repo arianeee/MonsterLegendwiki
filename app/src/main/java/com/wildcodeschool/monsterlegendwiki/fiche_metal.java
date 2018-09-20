@@ -1,6 +1,5 @@
 package com.wildcodeschool.monsterlegendwiki;
 
-import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,19 +7,18 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.TextView;
 
-public class FicheMonstre extends AppCompatActivity {
+public class fiche_metal extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_fiche_monstre_principale);
+        setContentView(R.layout.activity_fiche_metal);
 
-         EditText power =(EditText) findViewById(R.id.ETPower);
-         EditText life =(EditText) findViewById(R.id.ETLife);
-         EditText speed =(EditText) findViewById(R.id.ETSpeed);
-         EditText stamina =(EditText) findViewById(R.id.ETStamina);
+        EditText power =(EditText) findViewById(R.id.ETPower);
+        EditText life =(EditText) findViewById(R.id.ETLife);
+        EditText speed =(EditText) findViewById(R.id.ETSpeed);
+        EditText stamina =(EditText) findViewById(R.id.ETStamina);
 
 
 
@@ -34,7 +32,7 @@ public class FicheMonstre extends AppCompatActivity {
                 EditText life =(EditText) findViewById(R.id.ETLife);
                 EditText speed =(EditText) findViewById(R.id.ETSpeed);
                 EditText stamina =(EditText) findViewById(R.id.ETStamina);
-                /*Drawable nivo0= getResources().getDrawable(R.drawable.lionnv0);
+                /*Drawable nivo0= getResources().getDrawable(R.drawable.metalsaurnv0);
 
                 ImageView img = (ImageView) findViewById(R.id.IVa);
                 img.setImageDrawable(nivo0);*/
@@ -55,7 +53,7 @@ public class FicheMonstre extends AppCompatActivity {
                 EditText life =(EditText) findViewById(R.id.ETLife);
                 EditText speed =(EditText) findViewById(R.id.ETSpeed);
                 EditText stamina =(EditText) findViewById(R.id.ETStamina);
-                /*Drawable nivo1= getResources().getDrawable(R.drawable.lionnv1);
+                /*Drawable nivo1= getResources().getDrawable(R.drawable.metalsaurnv1);
 
                 ImageView img = (ImageView) findViewById(R.id.IVa);
                 img.setImageDrawable(nivo1);*/
@@ -75,7 +73,7 @@ public class FicheMonstre extends AppCompatActivity {
                 EditText life =(EditText) findViewById(R.id.ETLife);
                 EditText speed =(EditText) findViewById(R.id.ETSpeed);
                 EditText stamina =(EditText) findViewById(R.id.ETStamina);
-               /* Drawable nivo2= getResources().getDrawable(R.drawable.lionniv2);
+                /*Drawable nivo2= getResources().getDrawable(R.drawable.metalsaurnv2);
 
                 ImageView img = (ImageView) findViewById(R.id.IVa);
                 img.setImageDrawable(nivo2);*/
@@ -95,7 +93,7 @@ public class FicheMonstre extends AppCompatActivity {
                 EditText life =(EditText) findViewById(R.id.ETLife);
                 EditText speed =(EditText) findViewById(R.id.ETSpeed);
                 EditText stamina =(EditText) findViewById(R.id.ETStamina);
-                /*Drawable nivo3= getResources().getDrawable(R.drawable.lionnv3);
+                /*Drawable nivo3= getResources().getDrawable(R.drawable.metalsaurnv3);
 
                 ImageView img = (ImageView) findViewById(R.id.IVa);
                 img.setImageDrawable(nivo3);*/
@@ -107,7 +105,5 @@ public class FicheMonstre extends AppCompatActivity {
             }
         });
 
-
-        //Button button1 = (Button) findViewById(R.id.button_search);
     }
 }

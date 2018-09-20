@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fiche_turtle">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fiche_godzilla">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".FicheMonstrePrincipale">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/wikibackground">
+
+                <ImageButton
+                    android:id="@+id/imageButton3"
+                    android:layout_width="83dp"
+                    android:layout_height="75dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintBottom_toTopOf="@+id/button3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/imageButton7"
+                    app:layout_constraintTop_toBottomOf="@+id/textView4"
+                    app:srcCompat="@drawable/waterhabit" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="285dp"
+                    android:layout_height="68dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="TextView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sv" />
+
+                <ImageView
+                    android:id="@+id/imageView11"
+                    android:layout_width="34dp"
+                    android:layout_height="41dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/editText2"
+                    app:layout_constraintEnd_toStartOf="@+id/ETSpeed"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/editText2"
+                    app:srcCompat="@drawable/speed" />
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="32dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintBottom_toTopOf="@+id/imageView11"
+                    app:layout_constraintEnd_toStartOf="@+id/ETPower"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/editText5"
+                    app:layout_constraintTop_toTopOf="@+id/editText5"
+                    app:layout_constraintVertical_bias="1.0"
+                    app:srcCompat="@drawable/power" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="34dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/editText6"
+                    app:layout_constraintEnd_toStartOf="@+id/ETStamina"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/editText6"
+                    app:srcCompat="@drawable/stamina" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="34dp"
+                    android:layout_height="41dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/ETLife"
+                    app:layout_constraintEnd_toStartOf="@+id/ETLife"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/editText3"
+                    app:srcCompat="@drawable/life" />
+
+                <ImageButton
+                    android:id="@+id/imageButton7"
+                    android:layout_width="80dp"
+                    android:layout_height="72dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView4"
+                    app:srcCompat="@drawable/earthhabitat" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="72dp"
+                    android:layout_height="38dp"
+                    android:layout_marginEnd="55dp"
+                    android:layout_marginRight="55dp"
+                    android:text="NIV3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:layout_editor_absoluteY="306dp" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="0dp"
+                    android:layout_height="38dp"
+                    android:text="Niv2"
+                    app:layout_constraintEnd_toStartOf="@+id/button3"
+                    app:layout_constraintStart_toEndOf="@+id/button1"
+                    tools:layout_editor_absoluteY="306dp" />
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="0dp"
+                    android:layout_height="38dp"
+                    android:text="Niv1"
+                    app:layout_constraintEnd_toStartOf="@+id/button2"
+                    app:layout_constraintStart_toEndOf="@+id/button0"
+                    tools:layout_editor_absoluteY="306dp" />
+
+                <Button
+                    android:id="@+id/button0"
+                    android:layout_width="72dp"
+                    android:layout_height="38dp"
+                    android:layout_marginLeft="44dp"
+                    android:layout_marginStart="44dp"
+                    android:text="Niv0"
+                    app:layout_constraintEnd_toStartOf="@+id/button1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="306dp" />
+
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="101dp"
+                    android:layout_height="49dp"
+                    android:layout_marginBottom="61dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:inputType="textPersonName"
+                    android:text="Speed"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/ETSpeed"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:clickable="false" />
+
+                <EditText
+                    android:id="@+id/editText3"
+                    android:layout_width="101dp"
+                    android:layout_height="51dp"
+                    android:layout_marginBottom="59dp"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:inputType="textPersonName"
+                    android:text="Life"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/ETLife"
+                    tools:clickable="false" />
+
+                <EditText
+                    android:id="@+id/editText6"
+                    android:layout_width="101dp"
+                    android:layout_height="49dp"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:inputType="textPersonName"
+                    android:text="Stamina"
+                    app:layout_constraintBottom_toTopOf="@+id/editText3"
+                    app:layout_constraintEnd_toStartOf="@+id/ETStamina"
+                    tools:clickable="false" />
+
+                <EditText
+                    android:id="@+id/editText5"
+                    android:layout_width="101dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:inputType="textPersonName"
+                    android:text="Power"
+                    app:layout_constraintBottom_toTopOf="@+id/editText2"
+                    app:layout_constraintEnd_toStartOf="@+id/ETPower"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:clickable="false" />
+
+                <EditText
+                    android:id="@+id/ETStamina"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="35"
+                    app:layout_constraintBottom_toTopOf="@+id/ETLife"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <EditText
+                    android:id="@+id/ETLife"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="60dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="52"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <EditText
+                    android:id="@+id/ETSpeed"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="61dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="47"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/editText2" />
+
+                <EditText
+                    android:id="@+id/ETPower"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="50"
+                    app:layout_constraintBottom_toTopOf="@+id/ETSpeed"
+                    app:layout_constraintStart_toEndOf="@+id/editText5" />
+
+                <ScrollView
+                    android:id="@+id/sv"
+                    android:layout_width="321dp"
+                    android:layout_height="106dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/rockillanv0"
+                            tools:layout_editor_absoluteX="44dp"
+                            tools:layout_editor_absoluteY="37dp" />
+
+                        <ImageView
+                            android:id="@+id/imageView1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/rockillanv1"
+                            tools:layout_editor_absoluteX="44dp"
+                            tools:layout_editor_absoluteY="37dp" />
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/rockillanv2"
+                            tools:layout_editor_absoluteX="44dp"
+                            tools:layout_editor_absoluteY="37dp" />
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/rockillanv3"
+                            tools:layout_editor_absoluteX="44dp"
+                            tools:layout_editor_absoluteY="37dp" />
+
+
+                    </LinearLayout>
+                </ScrollView>
+
+
+            </android.support.constraint.ConstraintLayout>
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".FicheMonstrePrincipale">
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>
