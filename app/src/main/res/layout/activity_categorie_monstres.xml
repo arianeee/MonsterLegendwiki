@@ -13,32 +13,24 @@
         android:id="@+id/include"
         layout="@layout/navbar" /> -->
 
-    <Button
-        android:id="@+id/buttonmonstres"
-        android:layout_width="0dp"
-        android:layout_height="40dp"
-        android:background="@drawable/border"
-        android:text="Monstres                                                                 >"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/include" />
-
     <HorizontalScrollView
-        android:layout_width="368dp"
-        android:layout_height="172dp"
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="240dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
+        android:background="@drawable/border"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonmonstres">
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="50dp"
             android:orientation="horizontal">
 
             <ImageButton
@@ -163,6 +155,33 @@
 
         </LinearLayout>
     </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/buttonmonstres"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="280dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:text="Voir tout"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/horizontalScrollView" />
+
+    <TextView
+        android:id="@+id/textMonstres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Monstres"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </android.support.constraint.ConstraintLayout>
