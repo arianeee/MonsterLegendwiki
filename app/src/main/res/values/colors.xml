@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3f51b5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="cyan">#00BCD4</color>
+    <color name="orange">#f99005</color>
+    <color name="bleu">#000dca</color>
+    <color name="vert_fluo">#57cf24</color>
+
+    <color name="accent_color">@color/cyan</color>
+    <color name="colorPrimary">@color/bleu</color>
+    <color name="colorPrimaryDark">#303f9f</color>
     <color name="colorWhiteTransp">#99ffffff</color>
 </resources>

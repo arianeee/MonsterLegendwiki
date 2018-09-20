@@ -4,4 +4,44 @@
     <string name="fire_lion">Fire Lion</string>
     <string name="_100_gold">100 Gold</string>
     <string name="todo">TODO</string>
+    <string name="monsters">Monsters</string>
+    <string name="view_all">Vew all</string>
+    <string name="monstre_light">Monstre Light</string>
+    <string name="monstre_panda">Monstre Panda</string>
+    <string name="monstre_rockilla">Monstre Rockilla</string>
+    <string name="monstre_eagle">Monstre Eagle</string>
+    <string name="monstre_turtle">Monstre Turtle</string>
+    <string name="monstre_metalsaur">Monstre Metalsaur</string>
+    <string name="monstre_genie">Monstre Genie</string>
+    <string name="monstre_lion">Monstre Lion</string>
+    <string name="gold_farming">Gold Farming</string>
+    <string name="elements">Elements</string>
+    <string name="food">Food</string>
+    <string name="breeding_epic">Breeding Epic</string>
+    <string name="monster_arena">Monster Arena</string>
+    <string name="guide">Guide</string>
+    <string name="helpful_guides_and_tips_in_monsterlegend_wiki">Helpful guides and tips in MonsterLegend Wiki</string>
+    <string name="introduction_gold">Gold is the most important currency in the game, keeping your gold income in high rate will make you become a successful player. Gold can be earned by several ways:</string>
+    <string name="description_gold">- Collecting from habitats;\n- Your main source of gold! Selling items, monsters, eggs;\n- Clearing meteorites and rubbles, you can also get Food food or Gem gems from them;\n- Winning it in the daily reward;\n- Dragon Market, where you can collect Food food / Gold gold. The higher amount of friends helping you, the higher resource you\'ll get.</string>
+    <string name="introduction_arena">Monster Arena is a place where players use their powerful monsters to win other players and gain plenty of resources (Stealing Gold, Food) and various roulette rewards (Gem, Items, Gold, Food). After beating a player, you can also gain Trophies Trophy - this will be use for ranking between players. You can gain up to 30 Trophy in a combat.</string>
+    <string name="monster_team">Monster Team</string>
+    <string name="description_monster_team">In the Monster Arena, you can choose which monsters for your team, and this team will be the attack/defend team against other enemies. So choose it wisely, it will help you alot!</string>
+    <string name="introduction">Introduction</string>
+    <string name="introduction_breed">There are total of 142 epic monsters (17 of them are known breedable), and recently there has been new monsters added to the family.</string>
+    <string name="difficulty_of_breeding">Difficulty of Breeding</string>
+    <string name="text_difficulty_breeding"><![CDATA[There are some epic monsters that don\'t have opposite elements, which makes the game are more variable. They are: Musu, Pandalf, Goldcore, Fayemelina, Darknubis, Erpham, Drop Elemental. They can be bred directly from Common monsters. This open a window for new player to aim these monsters first for combat (quest & pvp).]]></string>
+    <string name="text_difficulty_breed">Other epic monsters are much more harder to breed, since they require using hybrid monsters, which will increase the elements of the breeding.</string>
+    <string name="method_technique">Method/Technique</string>
+    <string name="text_method"><![CDATA[- Normal/classic way: breeding 2 common/rare monsters, which can combine 1 pair opposite elements (each element from each parent monster). In this way (1 pair of opposite elements), your success chance is ~25% (2 Epic monsters - same elements). Example: Utochomp and Sheluke => 25% Epic monsters \n - For those Epic monsters within opposite elements: \"Double chance\" is the most effective way to make 4 Epic monsters by using 2 pair of opposite elements. The first monster has 2 elements, the other monster should have 2 elements that are all opposite with first monster\'s elements. In the double method, you will likely have a success chance 50% (total 4 Epic monsters). Example: Utochomp and Shock Turtle => 50% Epic monsters \n - For those Epic monsters without opposite elements: You just have to use basic uncommon monsters to get it, and the chance is 30% for the single Epic monster. Example: Genie and Treezard => 30% for Pandalf \n I recommend the last 2 methods. You will save your time with these methods.]]></string>
+    <string name="textfood3">Other ways to obtain Food are: \n \n - Monster Market.\n- Receive as a gift from friends.\n- Receive via mystery eggs.\n- Receive when a friend visits and clicks at your Farms.\n- Complete certain goals.\n- Daily bonus.\n- Buy with gems.\n \n On collecting your crops, you also earn XP XP with a ratio of 0.5→1.0 XP per Gold used.</string>
+    <string name="textfood2">Food Food is produced in the Farms which can be upgraded to unlock more crops that even produce larger amount of Food.</string>
+    <string name="textfood1">Food is used for feeding your monsters in order for them to gain experience and increase level. The higher level, the stronger your monsters will be. Food is also used for upgrading certain buildings. Food is important thing that should be collected every-day, every-hour.</string>
+    <string name="textelementscombatsexpli"><![CDATA[Elements from Monster Legends are very different from Dragon City, there is no primary nor secondary element.\n\nIf the enemy monster has 2 elements, the system will use both elements as the following priority:\n\n1.If one of them resists to the Attacking Element => WEAK damage (weak - 50%),\n2.If one of them is sensitive to the Attacking Element => STRONG damage (critical - 150%),\n3.Else, Normal Defense against the Attacking Element => NORMAL damage (normal - 100%).\n\nThere is a new exception due to new Status Effect of Metal attack - Magnetized: When a monster is under Magnetized effect, its defense is WEAK (defense reduced to 50%) against Metal attacks. The attack with Metal element will deal STRONG damage (200%), regardless the elements of the Magnetized monster.]]></string>
+    <string name="gold">gold</string>
+    <string name="heart">heart</string>
+    <string name="tomato">tomato</string>
+    <string name="what_is_food">What is Food?</string>
+    <string name="cropecplication">Before, crops grow time were 30 secs/ 5 mins/ 30 mins/ 2 hours/ 6 hours/ 12 hours/ 1 day/ 1 day 12 hours/ 2 days. On Game Update 23/10/2013, new grow time are 30 secs/ 5 mins/ 30 mins/ 30 mins/ 45 mins/ 1 hour/ 30 mins/ 45 mins/ 1 hour.</string>
+    <string name="crops">Crops</string>
+    <string name="other_guides">Other Guides</string>
 </resources>

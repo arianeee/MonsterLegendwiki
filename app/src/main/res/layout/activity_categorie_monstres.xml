@@ -7,40 +7,57 @@
     android:background="@drawable/wikibackground"
     tools:context=".CategorieMonstres">
 
+
     <!-- To include a navbar created in layout xml
 
     <include
         android:id="@+id/include"
         layout="@layout/navbar" /> -->
 
+
+    <Button
+        android:id="@+id/buttonmonstres"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="260dp"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:text="@string/view_all"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="17sp"
+        android:theme="@style/ButtonBleu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/horizontalScrollView2" />
+
     <HorizontalScrollView
-        android:id="@+id/horizontalScrollView"
+        android:id="@+id/horizontalScrollView2"
         android:layout_width="wrap_content"
-        android:layout_height="240dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
+        android:layout_height="0dp"
         android:background="@drawable/border"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView">
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="180dp"
-            android:layout_marginTop="50dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="70dp"
             android:orientation="horizontal">
 
             <ImageButton
                 android:id="@+id/buttonLion"
-                android:layout_width="140dp"
+                android:layout_width="160dp"
                 android:layout_height="match_parent"
+                android:layout_marginEnd="4dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="4dp"
                 android:layout_marginStart="16dp"
                 android:background="#b6818181"
+                android:contentDescription="@string/monstre_lion"
                 android:cropToPadding="false"
                 android:padding="1dp"
                 android:scaleType="centerInside"
@@ -51,11 +68,12 @@
 
             <ImageButton
                 android:id="@+id/buttonGenie"
-                android:layout_width="140dp"
+                android:layout_width="160dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="4dp"
                 android:layout_marginRight="4dp"
                 android:background="#b6818181"
+                android:contentDescription="@string/monstre_genie"
                 android:cropToPadding="false"
                 android:padding="1dp"
                 android:scaleType="centerInside"
@@ -65,12 +83,13 @@
 
             <ImageButton
                 android:id="@+id/buttonMetalsaur"
-                android:layout_width="140dp"
+                android:layout_width="160dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="4dp"
                 android:layout_marginRight="4dp"
                 android:layout_weight="1"
                 android:background="#b6818181"
+                android:contentDescription="@string/monstre_metalsaur"
                 android:cropToPadding="false"
                 android:padding="1dp"
                 android:scaleType="centerInside"
@@ -80,12 +99,13 @@
 
             <ImageButton
                 android:id="@+id/buttonTurtle"
-                android:layout_width="140dp"
+                android:layout_width="160dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="4dp"
                 android:layout_marginRight="4dp"
                 android:layout_weight="1"
                 android:background="#b6818181"
+                android:contentDescription="@string/monstre_turtle"
                 android:cropToPadding="false"
                 android:padding="1dp"
                 android:scaleType="centerInside"
@@ -95,12 +115,13 @@
 
             <ImageButton
                 android:id="@+id/buttonEagle"
-                android:layout_width="140dp"
+                android:layout_width="160dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="4dp"
                 android:layout_marginRight="4dp"
                 android:layout_weight="1"
                 android:background="#b6818181"
+                android:contentDescription="@string/monstre_eagle"
                 android:cropToPadding="false"
                 android:padding="1dp"
                 android:scaleType="centerInside"
@@ -110,12 +131,13 @@
 
             <ImageButton
                 android:id="@+id/buttonRockilla"
-                android:layout_width="140dp"
+                android:layout_width="160dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="4dp"
                 android:layout_marginRight="4dp"
                 android:layout_weight="1"
                 android:background="#b6818181"
+                android:contentDescription="@string/monstre_rockilla"
                 android:cropToPadding="false"
                 android:padding="1dp"
                 android:scaleType="centerInside"
@@ -125,12 +147,13 @@
 
             <ImageButton
                 android:id="@+id/buttonLight"
-                android:layout_width="140dp"
+                android:layout_width="160dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="4dp"
                 android:layout_marginRight="4dp"
                 android:layout_weight="1"
                 android:background="#b6818181"
+                android:contentDescription="@string/monstre_light"
                 android:cropToPadding="false"
                 android:padding="1dp"
                 android:scaleType="centerInside"
@@ -140,12 +163,13 @@
 
             <ImageButton
                 android:id="@+id/buttonPanda"
-                android:layout_width="140dp"
+                android:layout_width="160dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="4dp"
                 android:layout_marginRight="4dp"
                 android:layout_weight="1"
                 android:background="#b6818181"
+                android:contentDescription="@string/monstre_panda"
                 android:cropToPadding="false"
                 android:padding="1dp"
                 android:scaleType="centerInside"
@@ -156,32 +180,237 @@
         </LinearLayout>
     </HorizontalScrollView>
 
-    <Button
-        android:id="@+id/buttonmonstres"
-        android:layout_width="0dp"
-        android:layout_height="40dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="280dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="280dp"
-        android:layout_marginTop="8dp"
-        android:background="@android:color/transparent"
-        android:text="Voir tout"
-        android:textAppearance="@style/TextAppearance.AppCompat"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/horizontalScrollView" />
-
     <TextView
         android:id="@+id/textMonstres"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
         android:layout_marginTop="16dp"
-        android:text="Monstres"
+        android:layout_weight="1"
+        android:text="@string/monsters"
+        android:textColor="#000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/horizontalScrollView2" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/border_guide"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="240dp"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <ImageButton
+                    android:id="@+id/buttongold"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerInside"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/gold_monsterlegends" />
+
+                <TextView
+                    android:id="@+id/textGold"
+                    android:layout_width="81dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/gold_farming"
+                    android:textColor="#000"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/buttongold" />
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <ImageButton
+                    android:id="@+id/buttonarena"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerInside"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/monster_arena" />
+
+                <TextView
+                    android:id="@+id/textMonsterArena"
+                    android:layout_width="81dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/monster_arena"
+                    android:textColor="#000"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/buttonarena" />
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
+
+                <ImageButton
+                    android:id="@+id/buttonheart"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerInside"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/heart" />
+
+                <TextView
+                    android:id="@+id/textHeart"
+                    android:layout_width="86dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/breeding_epic"
+                    android:textColor="#000"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/buttonheart" />
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
+
+                <ImageButton
+                    android:id="@+id/buttonfood"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/food" />
+
+                <TextView
+                    android:id="@+id/textFood"
+                    android:layout_width="86dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/food"
+                    android:textColor="#000"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/buttonfood" />
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
+
+                <ImageButton
+                    android:id="@+id/buttonelements"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerInside"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/element_any" />
+
+                <TextView
+                    android:id="@+id/textElements"
+                    android:layout_width="86dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/elements"
+                    android:textColor="#000"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/buttonelements" />
+            </android.support.constraint.ConstraintLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/textguide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/guide"
+        android:textColor="#000"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textguidedescriptif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/helpful_guides_and_tips_in_monsterlegend_wiki"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/horizontalScrollView" />
 
 
 </android.support.constraint.ConstraintLayout>

@@ -9,22 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+
         <activity
             android:name=".MainActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar">
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".CategorieMonstres">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CategorieMonstres" />
+
         <activity android:name=".FicheMonstre" />
 
         <activity android:name=".FicheMonstrePrincipale" />
-        <activity
-            android:name=".ListChooseMonsters"
-            android:label="Monsters" />
+
         <activity android:name=".fiche_lightspirit" />
         <activity android:name=".fiche_panda" />
         <activity android:name=".fiche_eagle" />
@@ -32,6 +33,52 @@
         <activity android:name=".fiche_godzilla" />
         <activity android:name=".fiche_metal" />
         <activity android:name=".fiche_genie"></activity>
+
+
+        <activity
+            android:name=".ListChooseMonsters"
+            android:label="Monsters" />
+        <activity
+            android:name=".gold_farming"
+            android:label="Gold Farming Guide"
+            android:noHistory="true" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".MonsterArenaGuide"
+            android:label="Monster Arena Guide"
+            android:noHistory="true">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".breeding_epic"
+            android:label="Breading Guide - Epic Monsters"
+            android:noHistory="true">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".Food"
+            android:label="Food Guide"
+            android:noHistory="true">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".elements"
+            android:label="Elements Guide"
+            android:noHistory="true">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
     </application>
 
 </manifest>
