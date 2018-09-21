@@ -98,6 +98,22 @@
                 tools:layout_editor_absoluteY="96dp" />
 
             <ImageButton
+                android:id="@+id/buttonTurtle"
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/monstre_turtle"
+                android:cropToPadding="false"
+                android:padding="1dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/turtlenv3png"
+                tools:layout_editor_absoluteX="147dp"
+                tools:layout_editor_absoluteY="96dp" />
+
+            <ImageButton
                 android:id="@+id/buttonEagle"
                 android:layout_width="160dp"
                 android:layout_height="match_parent"
