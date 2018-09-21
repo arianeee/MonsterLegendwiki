@@ -404,8 +404,10 @@
 
     <TextView
         android:id="@+id/textguidedescriptif"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
         android:layout_marginTop="50dp"
         android:text="@string/helpful_guides_and_tips_in_monsterlegend_wiki"
         app:layout_constraintEnd_toEndOf="parent"

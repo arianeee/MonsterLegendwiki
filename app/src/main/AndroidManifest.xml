@@ -11,14 +11,15 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
-        <activity android:name=".CategorieMonstres">
+            android:theme="@style/Theme.AppCompat.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".CategorieMonstres"/>
+
         <activity
             android:name=".FicheMonstre"
             android:label="FIRE LION" />
@@ -52,6 +53,7 @@
         <activity
             android:name=".gold_farming"
             android:label="Gold Farming Guide"
+            android:parentActivityName=".CategorieMonstres"
             android:noHistory="true">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -60,6 +62,7 @@
         <activity
             android:name=".MonsterArenaGuide"
             android:label="Monster Arena Guide"
+            android:parentActivityName=".CategorieMonstres"
             android:noHistory="true">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -68,6 +71,7 @@
         <activity
             android:name=".breeding_epic"
             android:label="Breading Guide - Epic Monsters"
+            android:parentActivityName=".CategorieMonstres"
             android:noHistory="true">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -76,6 +80,7 @@
         <activity
             android:name=".Food"
             android:label="Food Guide"
+            android:parentActivityName=".CategorieMonstres"
             android:noHistory="true">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -84,6 +89,7 @@
         <activity
             android:name=".elements"
             android:label="Elements Guide"
+            android:parentActivityName=".CategorieMonstres"
             android:noHistory="true">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

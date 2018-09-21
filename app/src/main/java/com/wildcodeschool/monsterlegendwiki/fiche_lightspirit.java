@@ -32,9 +32,9 @@ public class fiche_lightspirit extends AppCompatActivity {
                 //Intent intent = new Intent(fiche_eagle.this, array.class);
                 //String lapin = new String(voyage);
                 //lapin=departt+"ajout";
-                Intent intent2 = new Intent(fiche_lightspirit.this, array.class);
+               /* Intent intent2 = new Intent(fiche_lightspirit.this, array.class);
                 intent2.putExtra(EXTRA_MESSAGE, voyage1);
-                startActivity(intent2);
+                startActivity(intent2); */
 
 
             }});
