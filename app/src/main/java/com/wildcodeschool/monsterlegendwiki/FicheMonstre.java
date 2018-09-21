@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -101,6 +102,14 @@ public class FicheMonstre extends AppCompatActivity {
             }
         });
 
+        ImageButton retour =(ImageButton) findViewById(R.id.elelien);
+        retour.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(FicheMonstre.this, elements.class);
+                startActivity(intent);
+            }
+        });
 
         //Button button1 = (Button) findViewById(R.id.button_search);
     }

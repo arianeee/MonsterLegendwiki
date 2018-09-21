@@ -117,7 +117,7 @@ public class fiche_eagle extends AppCompatActivity {
 
             }
         });
-        ImageButton ajout =(ImageButton) findViewById(R.id.butfavajout);
+        /*ImageButton ajout =(ImageButton) findViewById(R.id.butfavajout);
         ajout.setOnClickListener(new View.OnClickListener(){
 
             @Override
@@ -127,15 +127,15 @@ public class fiche_eagle extends AppCompatActivity {
                 //lapin=departt+"ajout";
                 Intent intent = new Intent(fiche_eagle.this, array.class);
                 intent.putExtra(EXTRA_MESSAGE, voyage);
-                startActivity(intent);
-
-
-            }
+                startActivity(intent);*/
 
 
 
 
-        });
+
+
+
+
 
     }
 }
