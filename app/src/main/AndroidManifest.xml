@@ -25,7 +25,7 @@
             android:label="FIRE LION" />
         <activity
             android:name=".FicheMonstrePrincipale"
-            android:label="FIRE LION" />
+            android:label="FIRE LION"/>
         <activity
             android:name=".fiche_lightspirit"
             android:label="LIGHT SPIRIT" />

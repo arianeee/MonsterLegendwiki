@@ -15,77 +15,86 @@
             android:layout_height="wrap_content"
             android:orientation="vertical" />
 
-        <HorizontalScrollView
-            android:id="@+id/horizontalScrollVieweagle"
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_marginBottom="304dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginStart="8dp"
-            android:background="@drawable/border"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent">
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollVieweagle"
+        android:layout_width="240dp"
+        android:layout_height="300dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="200dp"
-                android:layout_marginTop="70dp"
-                android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="300dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
 
 
-                <ImageView
-                    android:id="@+id/imageView15"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_weight="1"
-                    android:contentDescription="@string/monstre_rockilla"
-                    app:srcCompat="@drawable/lionnv0" />
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="220dp"
+                android:layout_height="280dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/monstre_rockilla"
+                app:srcCompat="@drawable/lionnv0" />
 
-                <ImageView
-                    android:id="@+id/imageView13"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_weight="1"
-                    android:contentDescription="@string/monstre_rockilla"
-                    app:srcCompat="@drawable/lionnv1" />
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="220dp"
+                android:layout_height="250dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/monstre_rockilla"
+                app:srcCompat="@drawable/lionnv1" />
 
-                <ImageView
-                    android:id="@+id/imageView12"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_weight="1"
-                    android:contentDescription="@string/monstre_rockilla"
-                    app:srcCompat="@drawable/lionniv2" />
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="220dp"
+                android:layout_height="250dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:contentDescription="@string/monstre_rockilla"
+                app:srcCompat="@drawable/lionniv2" />
 
-                <ImageView
-                    android:id="@+id/imageView"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_weight="1"
-                    android:contentDescription="@string/monstre_rockilla"
-                    app:srcCompat="@drawable/lionnv3" />
-            </LinearLayout>
-        </HorizontalScrollView>
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="220dp"
+                android:layout_height="250dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/monstre_rockilla"
+                app:srcCompat="@drawable/lionnv3" />
+        </LinearLayout>
+    </HorizontalScrollView>
 
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="358dp"
-            android:layout_height="83dp"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/borderpricemonstre"
-            android:text="Possessing a mane of white-hot hell fire and more than just a sting in his tail – the Fire Lion is a creature of mythic awesomeness! The Fire Lion will make fast work of anyone foolish enough to challenge him. "
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/horizontalScrollVieweagle"
-            app:layout_constraintVertical_bias="0.0" />
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="361dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/borderpricemonstre"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:text="@string/descriptionfirelion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollVieweagle"
+        app:layout_constraintVertical_bias="0.0" />
 
         <Button
             android:id="@+id/button1"
@@ -147,113 +156,115 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
-        <EditText
-            android:id="@+id/editText4"
-            android:layout_width="89dp"
-            android:layout_height="46dp"
-            android:layout_marginEnd="2dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="2dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="LIFE"
-            app:layout_constraintEnd_toStartOf="@+id/imageView17"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editText8" />
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="80dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        android:text="LIFE"
+        android:textColor="#000"
+        app:layout_constraintEnd_toStartOf="@+id/imageView17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText8" />
 
-        <EditText
-            android:id="@+id/editText9"
-            android:layout_width="89dp"
-            android:layout_height="46dp"
-            android:layout_marginEnd="2dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="2dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="STAMINA"
-            app:layout_constraintEnd_toStartOf="@+id/imageView18"
-            app:layout_constraintStart_toEndOf="@+id/ETPower"
-            app:layout_constraintTop_toBottomOf="@+id/button2" />
+    <EditText
+        android:id="@+id/editText9"
+        android:layout_width="89dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        android:text="STAMINA"
+        android:textColor="#000"
+        app:layout_constraintEnd_toStartOf="@+id/imageView18"
+        app:layout_constraintStart_toEndOf="@+id/ETPower"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
 
-        <EditText
-            android:id="@+id/editText8"
-            android:layout_width="89dp"
-            android:layout_height="46dp"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="2dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="2dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="POWER"
-            app:layout_constraintBottom_toTopOf="@+id/editText4"
-            app:layout_constraintEnd_toStartOf="@+id/imageView16"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button0" />
+    <EditText
+        android:id="@+id/editText8"
+        android:layout_width="80dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        android:text="POWER"
+        android:textColor="#000"
+        app:layout_constraintBottom_toTopOf="@+id/editText4"
+        app:layout_constraintEnd_toStartOf="@+id/imageView16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button0" />
 
-        <TextView
-            android:id="@+id/ETSpeed"
-            android:layout_width="34dp"
-            android:layout_height="42dp"
-            android:layout_marginEnd="2dp"
-            android:layout_marginLeft="4dp"
-            android:layout_marginRight="2dp"
-            android:layout_marginStart="4dp"
-            android:layout_marginTop="8dp"
-            android:text=""
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/imageView20"
-            app:layout_constraintTop_toBottomOf="@+id/ETStamina" />
+    <TextView
+        android:id="@+id/ETSpeed"
+        android:layout_width="34dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="8dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView20"
+        app:layout_constraintTop_toBottomOf="@+id/ETStamina" />
 
-        <TextView
-            android:id="@+id/ETLife"
-            android:layout_width="34dp"
-            android:layout_height="42dp"
-            android:layout_marginEnd="2dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="2dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:text=""
-            app:layout_constraintEnd_toStartOf="@+id/editText10"
-            app:layout_constraintStart_toEndOf="@+id/imageView17"
-            app:layout_constraintTop_toBottomOf="@+id/ETPower" />
+    <TextView
+        android:id="@+id/ETLife"
+        android:layout_width="34dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text=""
+        app:layout_constraintEnd_toStartOf="@+id/editText10"
+        app:layout_constraintStart_toEndOf="@+id/imageView17"
+        app:layout_constraintTop_toBottomOf="@+id/ETPower" />
 
-        <TextView
-            android:id="@+id/ETStamina"
-            android:layout_width="34dp"
-            android:layout_height="42dp"
-            android:layout_marginEnd="2dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="2dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:text=""
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/imageView18"
-            app:layout_constraintTop_toBottomOf="@+id/button3" />
+    <TextView
+        android:id="@+id/ETStamina"
+        android:layout_width="34dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="8dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView18"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
 
-        <TextView
-            android:id="@+id/ETPower"
-            android:layout_width="34dp"
-            android:layout_height="42dp"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:text=""
-            app:layout_constraintBottom_toTopOf="@+id/ETLife"
-            app:layout_constraintEnd_toStartOf="@+id/editText9"
-            app:layout_constraintStart_toEndOf="@+id/imageView16"
-            app:layout_constraintTop_toBottomOf="@+id/button1" />
+    <TextView
+        android:id="@+id/ETPower"
+        android:layout_width="34dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/ETLife"
+        app:layout_constraintEnd_toStartOf="@+id/editText9"
+        app:layout_constraintStart_toEndOf="@+id/imageView16"
+        app:layout_constraintTop_toBottomOf="@+id/button1" />
 
         <ImageView
             android:id="@+id/imageView16"
@@ -269,19 +280,19 @@
             app:layout_constraintTop_toBottomOf="@+id/button1"
             app:srcCompat="@drawable/power" />
 
-        <ImageView
-            android:id="@+id/imageView17"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="5dp"
-            android:layout_marginLeft="1dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginStart="1dp"
-            android:layout_marginTop="8dp"
-            app:layout_constraintEnd_toStartOf="@+id/ETLife"
-            app:layout_constraintStart_toEndOf="@+id/editText4"
-            app:layout_constraintTop_toBottomOf="@+id/imageView16"
-            app:srcCompat="@drawable/life" />
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toStartOf="@+id/ETLife"
+        app:layout_constraintStart_toEndOf="@+id/editText4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView16"
+        app:srcCompat="@drawable/life" />
 
         <ImageView
             android:id="@+id/imageView18"
@@ -297,21 +308,23 @@
             app:layout_constraintTop_toBottomOf="@+id/button3"
             app:srcCompat="@drawable/stamina" />
 
-        <EditText
-            android:id="@+id/editText10"
-            android:layout_width="89dp"
-            android:layout_height="41dp"
-            android:layout_marginEnd="2dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="2dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="SPEED"
-            app:layout_constraintEnd_toStartOf="@+id/imageView20"
-            app:layout_constraintStart_toEndOf="@+id/ETLife"
-            app:layout_constraintTop_toBottomOf="@+id/editText9" />
+    <EditText
+        android:id="@+id/editText10"
+        android:layout_width="89dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        android:text="SPEED"
+        android:textColor="#000"
+        app:layout_constraintEnd_toStartOf="@+id/imageView20"
+        app:layout_constraintStart_toEndOf="@+id/ETLife"
+        app:layout_constraintTop_toBottomOf="@+id/editText9" />
 
         <ImageView
             android:id="@+id/imageView20"
@@ -329,18 +342,34 @@
 
     <ImageButton
         android:id="@+id/elelien"
-        android:layout_width="50dp"
+        android:layout_width="wrap_content"
         android:layout_height="47dp"
-        android:layout_marginBottom="2dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.569"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/elefire" />
+
+    <TextView
+        android:id="@+id/textdescriptionfirelion"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_marginTop="5dp"
+        android:text="Description  - Fire Lion"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.0" />
 
 
 </android.support.constraint.ConstraintLayout>
