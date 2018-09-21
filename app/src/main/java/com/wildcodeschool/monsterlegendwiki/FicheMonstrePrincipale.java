@@ -20,7 +20,7 @@ public class FicheMonstrePrincipale extends AppCompatActivity {
         EditText life =(EditText) findViewById(R.id.ETLife);
         EditText speed =(EditText) findViewById(R.id.ETSpeed);
         EditText stamina =(EditText) findViewById(R.id.ETStamina);
-        ImageView img = (ImageView) findViewById(R.id.IVa);
+       // ImageView img = (ImageView) findViewById(R.id.IVa);
         Button NIV0 = (Button) findViewById(R.id.button0);
         NIV0.setOnClickListener(new View.OnClickListener() {
 

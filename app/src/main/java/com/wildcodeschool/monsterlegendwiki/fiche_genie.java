@@ -7,34 +7,30 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class fiche_genie extends AppCompatActivity {
+    public static final String EXTRA_MESSAGE = "com.example.myfirstapp.voyage";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fiche_genie);
-        EditText power =(EditText) findViewById(R.id.ETPower);
-        EditText life =(EditText) findViewById(R.id.ETLife);
-        EditText speed =(EditText) findViewById(R.id.ETSpeed);
-        EditText stamina =(EditText) findViewById(R.id.ETStamina);
 
-
-
-        ImageView img = (ImageView) findViewById(R.id.IVa);
+        //ImageView img = (ImageView) findViewById(R.id.IVa);
         Button NIV0 = (Button) findViewById(R.id.button0);
         NIV0.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                EditText power =(EditText) findViewById(R.id.ETPower);
-                EditText life =(EditText) findViewById(R.id.ETLife);
-                EditText speed =(EditText) findViewById(R.id.ETSpeed);
-                EditText stamina =(EditText) findViewById(R.id.ETStamina);
-                //Drawable nivo0= getResources().getDrawable(R.drawable.genienv0);
+                TextView power =(TextView) findViewById(R.id.ETPower);
+                TextView life =(TextView) findViewById(R.id.ETLife);
+                TextView speed =(TextView) findViewById(R.id.ETSpeed);
+                TextView stamina =(TextView) findViewById(R.id.ETStamina);
+               /* Drawable nivo0= getResources().getDrawable(R.drawable.rockillanv0);
 
-               // ImageView img = (ImageView) findViewById(R.id.IVa);
-                //img.setImageDrawable(nivo0);
+                ImageView img = (ImageView) findViewById(R.id.IVa);
+                img.setImageDrawable(nivo0);*/
                 power.setText("0");
                 life.setText("0");
                 speed.setText("0");
@@ -48,11 +44,11 @@ public class fiche_genie extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                EditText power =(EditText) findViewById(R.id.ETPower);
-                EditText life =(EditText) findViewById(R.id.ETLife);
-                EditText speed =(EditText) findViewById(R.id.ETSpeed);
-                EditText stamina =(EditText) findViewById(R.id.ETStamina);
-                /*Drawable nivo1= getResources().getDrawable(R.drawable.genienv1);
+                TextView power =(TextView) findViewById(R.id.ETPower);
+                TextView life =(TextView) findViewById(R.id.ETLife);
+                TextView speed =(TextView) findViewById(R.id.ETSpeed);
+                TextView stamina =(TextView) findViewById(R.id.ETStamina);
+                /*Drawable nivo1= getResources().getDrawable(R.drawable.rockillanv1);
 
                 ImageView img = (ImageView) findViewById(R.id.IVa);
                 img.setImageDrawable(nivo1);*/
@@ -68,11 +64,11 @@ public class fiche_genie extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                EditText power =(EditText) findViewById(R.id.ETPower);
-                EditText life =(EditText) findViewById(R.id.ETLife);
-                EditText speed =(EditText) findViewById(R.id.ETSpeed);
-                EditText stamina =(EditText) findViewById(R.id.ETStamina);
-               /* Drawable nivo2= getResources().getDrawable(R.drawable.genienv2);
+                TextView power =(TextView) findViewById(R.id.ETPower);
+                TextView life =(TextView) findViewById(R.id.ETLife);
+                TextView speed =(TextView) findViewById(R.id.ETSpeed);
+                TextView stamina =(TextView) findViewById(R.id.ETStamina);
+                /*Drawable nivo2= getResources().getDrawable(R.drawable.rockillanv2);
 
                 ImageView img = (ImageView) findViewById(R.id.IVa);
                 img.setImageDrawable(nivo2);*/
@@ -88,11 +84,11 @@ public class fiche_genie extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                EditText power =(EditText) findViewById(R.id.ETPower);
-                EditText life =(EditText) findViewById(R.id.ETLife);
-                EditText speed =(EditText) findViewById(R.id.ETSpeed);
-                EditText stamina =(EditText) findViewById(R.id.ETStamina);
-                /*Drawable nivo3= getResources().getDrawable(R.drawable.genienv3);
+                TextView power =(TextView) findViewById(R.id.ETPower);
+                TextView life =(TextView) findViewById(R.id.ETLife);
+                TextView speed =(TextView) findViewById(R.id.ETSpeed);
+                TextView stamina =(TextView) findViewById(R.id.ETStamina);
+                /*Drawable nivo3= getResources().getDrawable(R.drawable.rockillanv3);
 
                 ImageView img = (ImageView) findViewById(R.id.IVa);
                 img.setImageDrawable(nivo3);*/
