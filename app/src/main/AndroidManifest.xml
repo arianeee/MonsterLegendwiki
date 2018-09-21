@@ -9,33 +9,44 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-
         <activity
             android:name=".MainActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar">
+            android:theme="@style/Theme.AppCompat.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CategorieMonstres">
-        </activity>
+        <activity android:name=".CategorieMonstres"/>
 
-        <activity android:name=".FicheMonstre" />
-
-        <activity android:name=".FicheMonstrePrincipale" />
-
-        <activity android:name=".fiche_lightspirit" />
-        <activity android:name=".fiche_panda" />
-        <activity android:name=".fiche_eagle" />
-        <activity android:name=".fiche_turtle" />
-        <activity android:name=".fiche_godzilla" />
-        <activity android:name=".fiche_metal" />
-        <activity android:name=".fiche_genie"/>
-
-
+        <activity
+            android:name=".FicheMonstre"
+            android:label="FIRE LION" />
+        <activity
+            android:name=".FicheMonstrePrincipale"
+            android:label="FIRE LION" />
+        <activity
+            android:name=".fiche_lightspirit"
+            android:label="LIGHT SPIRIT" />
+        <activity
+            android:name=".fiche_panda"
+            android:label="PANDA" />
+        <activity
+            android:name=".fiche_eagle"
+            android:label="THUNDER EAGLE" />
+        <activity
+            android:name=".fiche_turtle"
+            android:label="TURTLE" />
+        <activity
+            android:name=".fiche_godzilla"
+            android:label="GODZILLA" />
+        <activity
+            android:name=".fiche_metal"
+            android:label="METAL SAURN" />
+        <activity
+            android:name=".fiche_genie"
+            android:label="GENIE" />
         <activity
             android:name=".ListChooseMonsters"
             android:label="Monsters" />
@@ -75,7 +86,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-
         <activity
             android:name=".elements"
             android:label="Elements Guide"

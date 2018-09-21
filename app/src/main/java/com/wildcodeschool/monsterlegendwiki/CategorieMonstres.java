@@ -40,7 +40,7 @@ public class CategorieMonstres extends AppCompatActivity {
         button_heart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(CategorieMonstres.this, breeding_epic.class);
+                Intent intent = new Intent(CategorieMonstres.this, fiche_eagle.class);
                 startActivity(intent);
             }
         });
@@ -49,7 +49,7 @@ public class CategorieMonstres extends AppCompatActivity {
         button_food.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(CategorieMonstres.this, Food.class);
+                Intent intent = new Intent(CategorieMonstres.this, fiche_lightspirit.class);
                 startActivity(intent);
             }
         });
